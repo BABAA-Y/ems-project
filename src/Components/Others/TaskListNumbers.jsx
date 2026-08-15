@@ -9,12 +9,12 @@ return (
         </div>
 
         <div className='py-9 px-6 rounded-xl bg-blue-400 h-40 w-[45%]'>
-        <h2 className='text-3xl font-semibold'>0</h2>
+        <h2 className='text-3xl font-semibold'>1</h2>
         <h3 className='text-xl font-medium '>NEW TASK</h3>
         </div>
         
         <div className='py-9 px-6 rounded-xl bg-yellow-400 h-40 w-[45%]'>
-        <h2 className='text-3xl font-semibold'>0</h2>
+        <h2 className='text-3xl font-semibold'>3</h2>
         <h3 className='text-xl font-medium '>NEW TASK</h3>
         </div>
 
