@@ -8,6 +8,6 @@ body {
 background-color: #111;
 }
 
-#klist::-webkit-scrollbar{
+#tasklist::-webkit-scrollbar{
   display: none;
 }
