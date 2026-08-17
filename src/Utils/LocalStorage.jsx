@@ -1,8 +1,17 @@
 const employees = [
   {
     id: 1,
+    firstName: "Rahul",
     email: "employee1@example.com",
     password: "123",
+
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
+
     tasks: [
       {
         active: true,
@@ -10,7 +19,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Complete Dashboard UI",
-        taskDescription: "Build the employee dashboard interface according to the design.",
+        taskDescription:
+          "Build the employee dashboard interface according to the design.",
         taskDate: "2026-08-15",
         category: "Development"
       },
@@ -20,7 +30,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Fix Login Validation",
-        taskDescription: "Fix email and password validation issues on the login page.",
+        taskDescription:
+          "Fix email and password validation issues on the login page.",
         taskDate: "2026-08-16",
         category: "Bug Fix"
       },
@@ -30,7 +41,8 @@ const employees = [
         completed: true,
         failed: false,
         taskTitle: "Create Navbar",
-        taskDescription: "Create a responsive navigation bar for the application.",
+        taskDescription:
+          "Create a responsive navigation bar for the application.",
         taskDate: "2026-08-12",
         category: "Frontend"
       },
@@ -40,7 +52,8 @@ const employees = [
         completed: false,
         failed: true,
         taskTitle: "Update API Documentation",
-        taskDescription: "Update the API documentation with the latest endpoints.",
+        taskDescription:
+          "Update the API documentation with the latest endpoints.",
         taskDate: "2026-08-13",
         category: "Documentation"
       }
@@ -49,8 +62,17 @@ const employees = [
 
   {
     id: 2,
+    firstName: "Priya",
     email: "employee2@example.com",
     password: "123",
+
+    taskNumbers: {
+      active: 3,
+      newTask: 2,
+      completed: 1,
+      failed: 1
+    },
+
     tasks: [
       {
         active: true,
@@ -58,7 +80,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Design Login Page",
-        taskDescription: "Create a clean and responsive login page design.",
+        taskDescription:
+          "Create a clean and responsive login page design.",
         taskDate: "2026-08-15",
         category: "Design"
       },
@@ -68,7 +91,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Create User Cards",
-        taskDescription: "Create reusable employee card components.",
+        taskDescription:
+          "Create reusable employee card components.",
         taskDate: "2026-08-17",
         category: "Frontend"
       },
@@ -78,7 +102,8 @@ const employees = [
         completed: true,
         failed: false,
         taskTitle: "Update Color Scheme",
-        taskDescription: "Update the application colors according to the new branding.",
+        taskDescription:
+          "Update the application colors according to the new branding.",
         taskDate: "2026-08-11",
         category: "Design"
       },
@@ -88,7 +113,8 @@ const employees = [
         completed: false,
         failed: true,
         taskTitle: "Create Mobile Layout",
-        taskDescription: "Create the mobile responsive layout for the dashboard.",
+        taskDescription:
+          "Create the mobile responsive layout for the dashboard.",
         taskDate: "2026-08-10",
         category: "Responsive"
       },
@@ -98,7 +124,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Design Task Cards",
-        taskDescription: "Design cards for displaying employee tasks.",
+        taskDescription:
+          "Design cards for displaying employee tasks.",
         taskDate: "2026-08-18",
         category: "UI Design"
       }
@@ -107,8 +134,17 @@ const employees = [
 
   {
     id: 3,
+    firstName: "Amit",
     email: "employee3@example.com",
     password: "123",
+
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 2,
+      failed: 1
+    },
+
     tasks: [
       {
         active: true,
@@ -116,7 +152,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Setup Database",
-        taskDescription: "Create the database structure required for the EMS project.",
+        taskDescription:
+          "Create the database structure required for the EMS project.",
         taskDate: "2026-08-15",
         category: "Database"
       },
@@ -126,7 +163,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Create Employee API",
-        taskDescription: "Create API endpoints for employee management.",
+        taskDescription:
+          "Create API endpoints for employee management.",
         taskDate: "2026-08-16",
         category: "Backend"
       },
@@ -136,7 +174,8 @@ const employees = [
         completed: true,
         failed: false,
         taskTitle: "Create Database Tables",
-        taskDescription: "Create tables for employees and tasks.",
+        taskDescription:
+          "Create tables for employees and tasks.",
         taskDate: "2026-08-12",
         category: "Database"
       },
@@ -146,7 +185,8 @@ const employees = [
         completed: true,
         failed: false,
         taskTitle: "Test Authentication",
-        taskDescription: "Test employee and admin authentication functionality.",
+        taskDescription:
+          "Test employee and admin authentication functionality.",
         taskDate: "2026-08-13",
         category: "Testing"
       },
@@ -156,7 +196,8 @@ const employees = [
         completed: false,
         failed: true,
         taskTitle: "Fix API Errors",
-        taskDescription: "Fix errors occurring in employee API requests.",
+        taskDescription:
+          "Fix errors occurring in employee API requests.",
         taskDate: "2026-08-09",
         category: "Bug Fix"
       }
@@ -165,8 +206,17 @@ const employees = [
 
   {
     id: 4,
+    firstName: "Sneha",
     email: "employee4@example.com",
     password: "123",
+
+    taskNumbers: {
+      active: 3,
+      newTask: 1,
+      completed: 2,
+      failed: 1
+    },
+
     tasks: [
       {
         active: true,
@@ -174,7 +224,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Write Test Cases",
-        taskDescription: "Create test cases for the employee dashboard.",
+        taskDescription:
+          "Create test cases for the employee dashboard.",
         taskDate: "2026-08-15",
         category: "Testing"
       },
@@ -184,7 +235,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Test Login System",
-        taskDescription: "Test login functionality with different credentials.",
+        taskDescription:
+          "Test login functionality with different credentials.",
         taskDate: "2026-08-16",
         category: "Testing"
       },
@@ -194,7 +246,8 @@ const employees = [
         completed: true,
         failed: false,
         taskTitle: "Test Task Creation",
-        taskDescription: "Test the task creation and assignment functionality.",
+        taskDescription:
+          "Test the task creation and assignment functionality.",
         taskDate: "2026-08-12",
         category: "Testing"
       },
@@ -204,7 +257,8 @@ const employees = [
         completed: false,
         failed: true,
         taskTitle: "Fix Dashboard Bug",
-        taskDescription: "Investigate and fix the dashboard loading issue.",
+        taskDescription:
+          "Investigate and fix the dashboard loading issue.",
         taskDate: "2026-08-11",
         category: "Bug Fix"
       },
@@ -214,7 +268,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Performance Testing",
-        taskDescription: "Check the performance of the application on different devices.",
+        taskDescription:
+          "Check the performance of the application on different devices.",
         taskDate: "2026-08-19",
         category: "Testing"
       },
@@ -224,7 +279,8 @@ const employees = [
         completed: true,
         failed: false,
         taskTitle: "Browser Testing",
-        taskDescription: "Test the application across Chrome, Edge and Firefox.",
+        taskDescription:
+          "Test the application across Chrome, Edge and Firefox.",
         taskDate: "2026-08-14",
         category: "Testing"
       }
@@ -233,8 +289,17 @@ const employees = [
 
   {
     id: 5,
+    firstName: "Vikram",
     email: "employee5@example.com",
     password: "123",
+
+    taskNumbers: {
+      active: 3,
+      newTask: 2,
+      completed: 2,
+      failed: 1
+    },
+
     tasks: [
       {
         active: true,
@@ -242,7 +307,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Create Reports",
-        taskDescription: "Create the employee performance reports section.",
+        taskDescription:
+          "Create the employee performance reports section.",
         taskDate: "2026-08-15",
         category: "Reports"
       },
@@ -252,7 +318,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Update Employee Data",
-        taskDescription: "Update employee information in the system.",
+        taskDescription:
+          "Update employee information in the system.",
         taskDate: "2026-08-17",
         category: "Management"
       },
@@ -262,7 +329,8 @@ const employees = [
         completed: true,
         failed: false,
         taskTitle: "Generate Monthly Report",
-        taskDescription: "Generate the monthly employee performance report.",
+        taskDescription:
+          "Generate the monthly employee performance report.",
         taskDate: "2026-08-10",
         category: "Reports"
       },
@@ -272,7 +340,8 @@ const employees = [
         completed: true,
         failed: false,
         taskTitle: "Organize Employee Records",
-        taskDescription: "Organize and verify employee records.",
+        taskDescription:
+          "Organize and verify employee records.",
         taskDate: "2026-08-12",
         category: "Management"
       },
@@ -282,7 +351,8 @@ const employees = [
         completed: false,
         failed: true,
         taskTitle: "Backup Employee Data",
-        taskDescription: "Create a backup of employee records.",
+        taskDescription:
+          "Create a backup of employee records.",
         taskDate: "2026-08-08",
         category: "Database"
       },
@@ -292,7 +362,8 @@ const employees = [
         completed: false,
         failed: false,
         taskTitle: "Prepare Weekly Report",
-        taskDescription: "Prepare the weekly employee activity report.",
+        taskDescription:
+          "Prepare the weekly employee activity report.",
         taskDate: "2026-08-20",
         category: "Reports"
       }
