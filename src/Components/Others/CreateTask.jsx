@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { AuthContext } from '../../Context/AuthProvider';
 
 const CreateTask = () => {
+
+    const [userData, setUserData] = useContext(AuthContext);
 
     const [taskTitle, setTaskTitle] = useState('')
     const [taskDescription, setTaskDescription] = useState('')
@@ -8,22 +11,33 @@ const CreateTask = () => {
     const [assignTo, setAssignTo] = useState('')
     const [category, setCategory] = useState('')
 
-    const [task, setTask] = useState({})
+    const [newTask, setNewTask] = useState({})
 
     const submitHandller = (e) => {
         e.preventDefault()
 
-        setTask({taskTitle, taskDescription, taskDate, category, active:false, newTask:true, failed:true, completed:false});
+        setNewTask({taskTitle, taskDescription, taskDate, category, active:false, newTask:true, failed:false, completed:false});
         
-        const data = JSON.parse(localStorage.getItem('employees'))
+        const data = userData
 
-        data.forEach(elem => {
-            if(assignTo === elem.firstName)
 
-            console.log(elem);
-            
-        });
-        
+        data.forEach(function(elem){
+
+                if(assignTo === elem.firstName){
+                elem.tasks.push(newTask)
+                elem.taskNumbers.newTask = elem.taskNumbers.newTask+1
+                }
+
+            });
+            setUserData(data)
+            console.log(data)
+
+
+            setTaskTitle('')                                                                                                               
+            setTaskDescription('')                                                                                                         
+            setTaskDate('')                                                                                                                
+            setAssignTo('')                                                                                                                
+            setCategory('')  
     }
   return (
 

@@ -1,7 +1,6 @@
 import React from "react";
 
-const AcceptTask = ({ data }) => {
-  console.log(data);
+const AcceptTask = ({ data }) => { 
   return (
     <div className="shrink-0 h-full w-80 p-5 bg-indigo-800 rounded-xl">
       <div className="flex justify-between items-center">

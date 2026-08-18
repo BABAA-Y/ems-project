@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
 
 const AllTask = () => {
-const authData = useContext(AuthContext);
+const [userData, setUserData] = useContext(AuthContext);
 
 
 return (
@@ -19,7 +19,7 @@ return (
 
 
     <div id="tasklist"  >
-    {authData.employees.map((elem, idx) => {
+    {userData.map((elem, idx) => {
     return <div key={idx} className="bg-gray-800 mb-2 py-2 px-4 flex justify-between rounded">
         <h2 className="w-1/5">{elem.firstName}</h2>
         <h3 className="w-1/5 text-blue-600">{elem.taskNumbers.newTask}</h3>
