@@ -3,10 +3,10 @@ import Header from '../Others/Header'
 import CreateTask from '../Others/CreateTask'
 import AllTask from '../Others/AllTask'
 
-const AdminDashboard = () => {
+const AdminDashboard = (props) => {
   return (
     <div className='h-screen w-full p-10'>
-        <Header />
+        <Header changeUser={props.changeUser} />
         <CreateTask />
         <AllTask />
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Header = ({data}) => {
+const Header = (props) => {
   // const [username,setUsername]  = useState('')
 
   // if(!data){
@@ -12,7 +12,7 @@ const Header = ({data}) => {
 
   const logoutUser = () => {
     localStorage.setItem('loggedInUser', '')
-    window.location.reload()
+    props.changeUser('')
   }
 
   return (
